@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    background-image: url("./hypercube.jpg");
+}
+
+button {
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: rgb(0, 66, 83);
+    border-style: solid;
+    border-radius: 5px;
+    transition: all .07s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 21, 41, 0.856);
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    width: 1220px;
+}
+
+.title {
+    font-size: 50px;
+    margin: 20px;
+    padding: 3px;
+}
+
+.add {
+    font-size: 20px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.erase-all {
+    font-size: 20px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(116, 0, 0);
+}
+
+.container {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.library-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: fit-content;
+}
+
+.info-tag {
+    margin: 5px;
+    padding: 5px;
+    height: fit-content;
+    font-weight: bold;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    width: 1230px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 210px;
+    height: fit-content;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: rgba(0, 21, 41, 0.856);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .07s ease;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.856);
+    color: rgba(0, 21, 41, 0.856);
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    width: 18%;
+    height: fit-content;
+}
+
+.modal-label {
+    margin: 3px;
+}
+
+.read-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    margin-top: 3px;
+}
+
+.modal.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit {
+    margin: 5px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    border-radius: 2px;
+    align-self: flex-end;
+}
+
+.close {
+    margin: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    border-radius: 2px;
+    align-self: flex-end;
+    color: rgb(0, 66, 83);
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.remove {
+    width: fit-content;
+    margin: 5px;
+}
+
+.pressed {
+    background-color: rgb(114, 114, 114);
+    color: rgb(33, 47, 61);
+    transform: scale(1.1);
+}

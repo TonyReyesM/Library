@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title">My Library</h1>
+            <div class="container">
+                <div class="library-info">
+                    <div class="info-tag totalnum">Number of books:</div>
+                    <div class="info-tag readnum">Books read:</div>
+                </div>
+                <button class="add">Add</button>
+                <button class="erase-all">Erase All</button>
+            </div>
+        </div>
+        <div class="card-grid"></div>
+        <div class="modal-bg">
+            <div class="modal">
+                <div class="inputs">
+                    <h2 class="modal-title">Add a new book!</h2>
+                    <div class="modal-label">Title:</div>
+                    <input class="title-input" type="text">
+                    <div class="modal-label">Author:</div>
+                    <input class="author-input" type="text">
+                    <div class="modal-label">Pages:</div>
+                    <input class="pages-input" type="text">
+                    <div class="read-box">
+                        <div class="modal-label">Read:</div>
+                        <input class="read-input" type="checkbox">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="close">Close</button>
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
