@@ -1,3 +1,22 @@
+//BOOK CLASS------------------------------------------------------------------------------------------
+class Book {
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+    info() {
+        if(read === true) return `${title} by ${author}, ${pages} pages, already read.`;
+        else return `${title} by ${author}, ${pages} pages, not read yet.`
+    }
+    updateStatus(checkboxVal) {
+        if(checkboxVal === true) this.read = true
+        else if(checkboxVal === false) this.read = false
+    }
+}
+
+
 //BOOKS
 const dune = new Book('Dune', 'Frank Herbert', 794, true);
 const demian = new Book('Demian', 'Herman Hesse', 145, true);
@@ -5,10 +24,11 @@ const rant = new Book('Rant', 'Chuck Palahniuk', 319, true);
 const duneMessiah = new Book('Dune: Messiah', 'Frank Herbert', 354, false);
 const neuromancer = new Book('Neuromancer', 'William Gibson', 324, false)
 
-//LIBRARY ARRAY
+//LIBRARY ARRAY---------------------------------------------------------------------------------------
 const myBooks = [dune, duneMessiah, rant, demian, neuromancer]
 
 //BOOK OBJECT CONSTRUCTOR-----------------------------------------------------------------------------
+/*
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -23,6 +43,7 @@ function Book(title, author, pages, read) {
         else if(checkboxVal === false) this.read = false    
     }
 }
+*/
 
 //ADD TO LIBRARY FUNCTION-----------------------------------------------------------------------------
 function addToLibrary(book){
